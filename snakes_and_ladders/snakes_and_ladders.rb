@@ -11,8 +11,9 @@ class SnakeAndLadders
     @viewer = viewer
 
     positions = rand_snakes_and_ladders_and_auto_win()
+    boardsize = rand(18..36)
 
-    board = Board.new(27, positions)
+    board = Board.new(boardsize, positions)
 
     player_1_name = @viewer.get_player_name(1)
     player_2_name = @viewer.get_player_name(2)
